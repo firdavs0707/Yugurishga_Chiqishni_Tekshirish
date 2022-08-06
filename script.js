@@ -22,6 +22,6 @@ elForm.addEventListener('submit', function (event) {
   }
   if ((elInput.value >= 5) && (elInput.value <= 40)) {
     elResult.textContent = 'Kochada yugurishingiz mumkin!';
-  }
+  };
 })
 
