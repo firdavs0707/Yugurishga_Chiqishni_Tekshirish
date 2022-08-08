@@ -14,12 +14,16 @@ elForm.addEventListener('submit', function (event) {
   if (isNaN(elInput)) {
     elResult.textContent = 'Son kiriting!';
   }
+  if ((elCheck.checked == 1) && (elCheckZall.checked == 1)){
+    elResult.textContent = 'Bittasin tanlang!';
+    return;
+  }
   if (elCheck.checked == 1) {
     elResult.textContent = 'Yugurishga ertaga chiqishingizni maslahat Beramiz!';
     return;
   }
   if (elCheckZall.checked == 1) {
-    elResult.textContent = 'Kochada yugurishingiz mumkin!';
+    elResult.textContent = 'Zallda yugurishingiz mumkin!';
     return;
   }
   if ((elInput.value < 5) || (elInput.value > 40)) {
